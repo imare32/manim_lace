@@ -1,10 +1,10 @@
 # Lace 算法文档
 
 <p align="center">
-  <img src="images/TestLaceScene0_ManimCE_v0.19.1.png" width="45%" />
-  <img src="images/TestLaceScene1_ManimCE_v0.19.1.png" width="45%" />
-  <img src="images/TestLaceScene2_ManimCE_v0.19.1.png" width="45%" />
-  <img src="images/TestLaceScene3_ManimCE_v0.19.1.png" width="45%" />
+  <img src="images/TestLaceScene0_ManimCE_v0.19.1.png" width="1280" height="720" />
+  <img src="images/TestLaceScene1_ManimCE_v0.19.1.png" width="1280" height="720" />
+  <img src="images/TestLaceScene2_ManimCE_v0.19.1.png" width="1280" height="720" />
+  <img src="images/TestLaceScene3_ManimCE_v0.19.1.png" width="1280" height="720" />
 </p>
 
 ## 概述
