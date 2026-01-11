@@ -1,0 +1,27 @@
+[project]
+name = "manim_lace"
+version = "0.1.0"
+description = "将任意 Manim 路径转换为具有`交错编织`效果的丝带图案"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "manim>=0.19.0",
+]
+
+[tool.ruff]
+ignore = [
+    "E741", # Ambiguous variable name: `l`
+    "F403", # "from module import *" used; unable to detect undefined names
+]
+line-length = 120
+
+[tool.ruff.lint]
+[tool.ruff.lint.per-file-ignores]
+"{__init__.py,test*.py,*.ipynb}" = [
+    "F401", # unused import
+    "E402", # module level import not at top of file
+    "F405", # undefined local with import star usage
+]
+
+[tool.uv]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
