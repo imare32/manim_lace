@@ -1,5 +1,12 @@
 # Lace 算法文档
 
+<p align="center">
+  <img src="images/TestLaceScene0_ManimCE_v0.19.1.png" width="45%" />
+  <img src="images/TestLaceScene1_ManimCE_v0.19.1.png" width="45%" />
+  <img src="images/TestLaceScene2_ManimCE_v0.19.1.png" width="45%" />
+  <img src="images/TestLaceScene3_ManimCE_v0.19.1.png" width="45%" />
+</p>
+
 ## 概述
 
 Lace (Interlacing) 算法用于将任意 Manim 路径转换为具有"编织交错"效果的丝带图案。当多条路径相交时，算法会自动计算交替的上下遮挡关系，模拟真实编织物的视觉效果。
