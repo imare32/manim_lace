@@ -15,7 +15,7 @@ from scipy.spatial import cKDTree
 
 from .swatches import random_swatch
 
-DEV_MODE = 1
+DEV_MODE = False
 
 
 def timer(func):
