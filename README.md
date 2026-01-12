@@ -1,8 +1,8 @@
 # Interlacing Algorithm for Manim
 
-![Manim](https://img.shields.io/badge/Manim-0.19-bcbdc0?style=flat) ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat)
+[![Manim](https://img.shields.io/badge/Manim-0.19-bcbdc0?style=flat)](https://github.com/ManimCommunity/manim) ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat)
 
-Lace (Interlacing) 算法用于将任意 Manim 路径转换为具有"编织交错"效果的丝带图案。当多条路径相交时，算法会自动计算交替的上下遮挡关系，模拟真实编织物的视觉效果。
+Lace (Interlacing) 算法用于将任意 [Manim](https://github.com/ManimCommunity/manim) 路径转换为具有"编织交错"效果的丝带图案。当多条路径相交时，算法会自动计算交替的上下遮挡关系，模拟真实编织物的视觉效果。
 
 <p align="center">
   <img src="images/TestLaceScene0_ManimCE_v0.19.1.png" width="854" height="480" />
