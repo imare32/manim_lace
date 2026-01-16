@@ -7,6 +7,35 @@ from manim import Polygram
 STAR_TYPE = typing.Literal["PA", "PO", "PR", "CA", "CR"]
 
 
+def transform_reps(coords: np.ndarray, move=None, rotate=None, scale=None, num=1):
+    if move is None:
+        move = np.zeros(2)
+    else:
+        move = np.array(move)
+    if rotate is None:
+        rotate = 0
+    if scale is None:
+        scale = 1
+
+    reps: list[np.ndarray] = []
+    for i in range(num):
+        theta = rotate * i
+        c, s = np.cos(theta), np.sin(theta)
+        rotation = np.array([[c, -s], [s, c]])
+
+        new_coords = coords @ rotation.T
+        new_coords *= scale**i
+        new_coords += move * i
+        reps.append(new_coords)
+
+    return reps
+
+
+def rosette(kernel, n):
+    petal = np.vstack([kernel, kernel[::-1] * (1, -1)])[::-1]
+    return transform_reps(petal, rotate=2 * np.pi / n, num=n)
+
+
 def cal_kernels(n, level=2, star_type: STAR_TYPE = "PA"):
     """计算 Rosette 的基础几何骨架 (kernels)"""
     θ = np.pi / n
